@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visual Form Designer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="navbar">
+        <h2>Form Designer</h2>
+        <button id="save-btn">Save</button>
+      </div>
+      <div id="body">
+        <div id="sidebar">
+          <h3>Components</h3>
+          <div id="components"></div>
+        </div>
+        <ul id="form">
+          <img
+            class="form-placeholder-img"
+            src="./assets/—Pngtree—add icon_4490508.png"
+            alt="add_content"
+          />
+        </ul>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./dragNdrop.js"></script>
+    <script src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b57767c9d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $("#form").sortable();
+    </script>
+  </body>
+</html>

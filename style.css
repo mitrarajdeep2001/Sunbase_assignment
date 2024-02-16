@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+:root {
+  --background-gradient: linear-gradient(178deg, #ffff33 10%, #3333ff);
+  --gray: #34495e;
+  --darkgray: #2c3e50;
+}
+
+#main-container {
+  background-color: #e4e4e4;
+}
+
+#navbar {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#save-btn {
+  background-color: #fff;
+  border: 1px solid black;
+  padding: 8px;
+  width: 100px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+#save-btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+#body {
+  display: flex;
+}
+
+#sidebar {
+  /* max-width: 500px; */
+  width: 20%;
+  height: calc(100vh - 56px);
+  background-color: #fafafa;
+}
+
+#sidebar h3 {
+  font-weight: 400;
+  padding: 10px;
+  color: gray;
+  border-bottom: 1px solid lightgrey;
+}
+
+#components div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+  margin: 20px auto;
+  width: 90%;
+  transition: transform 0.2s ease;
+}
+
+#components div:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.fa-solid.fa-plus,
+.fa-solid.fa-trash {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#form {
+  position: relative;
+  height: 600px;
+  min-width: 500px;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  overflow-y: auto;
+  -webkit-box-shadow: 0px 0px 9px 2px rgba(204, 196, 204, 1);
+  -moz-box-shadow: 0px 0px 9px 2px rgba(204, 196, 204, 1);
+  box-shadow: 0px 0px 9px 2px rgba(204, 196, 204, 1);
+}
+
+#form img {
+  height: 400;
+  width: 400px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+#form .element {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 15px;
+  border: 1px solid #dfdfdf;
+  background: #f5f5f5;
+}
+
+#form .element div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  cursor: move;
+}
+
+#form input,
+#form textarea {
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+}
+
+#form input:focus,
+#form textarea:focus {
+  outline-width: 2px;
+  outline-color: lightgrey;
+}
+
+#form textarea {
+  resize: none;
+  padding: 10px;
+}
+
+/* Style for select  */
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 10px red;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 10px;
+  color: #fff;
+  background-color: #fff;
+  color: gray;
+  background-image: none;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 100%;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width: 100%;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6px 10px;
+  pointer-events: none;
+}
